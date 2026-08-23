@@ -10606,3 +10606,49 @@ footer div:last-child {
     }
 
 }
+
+
+
+
+
+/* JOIN HACKATHON BUTTON — MATCH OTHER HERO BUTTONS */
+
+.hero-buttons .join-team-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+    padding: 0 24px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(38, 99, 235, 0.35),
+        rgba(91, 45, 190, 0.35)
+    );
+
+    color: #ffffff;
+
+    border: 1px solid rgba(120, 150, 220, 0.35);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.hero-buttons .join-team-btn:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(80, 140, 255, 0.75);
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.20);
+}

@@ -402,7 +402,22 @@
                 <form
                     class="contact-form"
                     id="contactForm"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
                 >
+
+                    <!-- Web3Forms -->
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="75ef56e2-1d95-432a-8bb2-ec110d290a4e"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="from_name"
+                        value="Uttakaladeba Portfolio"
+                    >
 
 
                     <!-- NAME -->
@@ -709,6 +724,61 @@
     =================================================== -->
 
     <script src="script.js"></script>
+
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", async function (event) {
+                event.preventDefault();
+
+                const submitButton = contactForm.querySelector(".contact-submit");
+                const originalText = submitButton ? submitButton.innerHTML : "";
+
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = "<span>SENDING...</span><b>↗</b>";
+                }
+
+                try {
+                    const response = await fetch(
+                        "https://api.web3forms.com/submit",
+                        {
+                            method: "POST",
+                            body: new FormData(contactForm)
+                        }
+                    );
+
+                    const result = await response.json();
+
+                    if (!result.success) {
+                        throw new Error(result.message || "Unable to send message.");
+                    }
+
+                    formMessage.textContent =
+                        "Message sent successfully! I'll get back to you soon.";
+                    formMessage.style.display = "block";
+                    formMessage.style.color = "#7ee2a8";
+
+                    contactForm.reset();
+
+                } catch (error) {
+                    formMessage.textContent =
+                        "Something went wrong. Please try again.";
+                    formMessage.style.display = "block";
+                    formMessage.style.color = "#ff7b8a";
+                    console.error("Contact form error:", error);
+
+                } finally {
+                    if (submitButton) {
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = originalText;
+                    }
+                }
+            });
+        }
+    </script>
 
 </body>
 
