@@ -1,0 +1,1569 @@
+/* =========================================================
+   LEARN WITH ME
+   RED × GREEN — MODERN DEVELOPER THEME
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(255, 40, 40, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(0, 255, 120, 0.09),
+            transparent 28%
+        ),
+        #050807;
+
+    min-height: 100vh;
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 420px;
+    height: 420px;
+
+    top: -180px;
+    left: -160px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 30, 30, 0.08);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+    animation:
+        floatingRed 8s ease-in-out infinite alternate;
+
+    z-index: -1;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 420px;
+    height: 420px;
+
+    right: -180px;
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0, 255, 120, 0.07);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+    animation:
+        floatingGreen 10s ease-in-out infinite alternate;
+
+    z-index: -1;
+}
+
+
+@keyframes floatingRed {
+
+    from {
+        transform:
+            translate(0, 0);
+    }
+
+    to {
+        transform:
+            translate(100px, 80px);
+    }
+}
+
+
+@keyframes floatingGreen {
+
+    from {
+        transform:
+            translate(0, 0);
+    }
+
+    to {
+        transform:
+            translate(-100px, -70px);
+    }
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    padding:
+        18px 7%;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    background:
+        rgba(5, 8, 7, 0.78);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+}
+
+
+.logo::after {
+    content: "";
+
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    margin-left: 5px;
+
+    border-radius: 50%;
+
+    background:
+        #ff3030;
+
+    box-shadow:
+        0 0 12px #ff3030;
+
+    animation:
+        logoPulse 1.8s ease-in-out infinite;
+}
+
+
+@keyframes logoPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+
+        transform:
+            scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+
+        transform:
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.header nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+}
+
+
+.header nav a {
+    position: relative;
+
+    color: #9da59f;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.header nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff3030,
+            #31e981
+        );
+
+    transform:
+        translateX(-50%);
+
+    transition:
+        width 0.3s ease;
+}
+
+
+.header nav a:hover {
+    color: #ffffff;
+}
+
+
+.header nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.learn-hero {
+    position: relative;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    padding:
+        125px 20px 105px;
+
+    text-align: center;
+}
+
+
+.learn-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    top: 30px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 40, 40, 0.09),
+            rgba(0, 255, 120, 0.07)
+        );
+
+    filter: blur(80px);
+
+    animation:
+        heroGlow 6s ease-in-out infinite alternate;
+
+    z-index: -1;
+}
+
+
+@keyframes heroGlow {
+
+    from {
+        transform:
+            translateX(-50%)
+            scale(0.85);
+    }
+
+    to {
+        transform:
+            translateX(-50%)
+            scale(1.15);
+    }
+}
+
+
+/* =========================================================
+   HERO BADGE
+========================================================= */
+
+.small-title {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding:
+        8px 15px;
+
+    margin-bottom:
+        25px;
+
+    border:
+        1px solid
+        rgba(255, 60, 60, 0.20);
+
+    border-radius:
+        100px;
+
+    background:
+        rgba(255, 40, 40, 0.06);
+
+    color:
+        #ff7777;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2.5px;
+
+    animation:
+        badgeFloat 3s ease-in-out infinite;
+}
+
+
+@keyframes badgeFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-5px);
+    }
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.learn-hero h1 {
+    font-size:
+        clamp(48px, 7vw, 78px);
+
+    line-height:
+        1.02;
+
+    letter-spacing:
+        -3.5px;
+
+    margin-bottom:
+        25px;
+
+    font-weight:
+        800;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ffffff 15%,
+            #ff5c5c 48%,
+            #45ef91 85%
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    -webkit-text-fill-color:
+        transparent;
+
+    background-size:
+        200% auto;
+
+    animation:
+        gradientMove 5s linear infinite;
+}
+
+
+@keyframes gradientMove {
+
+    0% {
+        background-position:
+            0% center;
+    }
+
+    100% {
+        background-position:
+            200% center;
+    }
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.learn-hero p {
+    max-width:
+        650px;
+
+    margin:
+        auto;
+
+    color:
+        #929b95;
+
+    font-size:
+        16px;
+
+    line-height:
+        1.8;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.courses,
+.lectures {
+    width:
+        86%;
+
+    max-width:
+        1150px;
+
+    margin:
+        0 auto;
+}
+
+
+.courses {
+    padding-bottom:
+        110px;
+}
+
+
+.lectures {
+    padding-bottom:
+        130px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    margin-bottom:
+        34px;
+}
+
+
+.section-label {
+    display:
+        inline-block;
+
+    margin-bottom:
+        9px;
+
+    color:
+        #ff5050;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2.5px;
+}
+
+
+.section-heading h2 {
+    font-size:
+        clamp(28px, 4vw, 38px);
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        -1.2px;
+
+    margin-bottom:
+        8px;
+}
+
+
+.section-heading p {
+    color:
+        #7f8982;
+
+    font-size:
+        14px;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.course-card {
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        35px;
+
+    padding:
+        32px 34px;
+
+    margin-bottom:
+        18px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    border-radius:
+        22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.012)
+        );
+
+    backdrop-filter:
+        blur(14px);
+
+    -webkit-backdrop-filter:
+        blur(14px);
+
+    overflow:
+        hidden;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* MOVING TOP LINE */
+
+.course-card::after {
+    content: "";
+
+    position:
+        absolute;
+
+    left:
+        -100%;
+
+    top:
+        0;
+
+    width:
+        100%;
+
+    height:
+        2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ff3030,
+            #31e981,
+            transparent
+        );
+
+    transition:
+        left 0.6s ease;
+}
+
+
+.course-card:hover::after {
+    left:
+        100%;
+}
+
+
+.course-card:hover {
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(255, 70, 70, 0.22);
+
+    box-shadow:
+        0 20px 55px
+        rgba(0, 0, 0, 0.35),
+        0 0 30px
+        rgba(255, 40, 40, 0.05);
+}
+
+
+/* =========================================================
+   COURSE INFO
+========================================================= */
+
+.course-info {
+    flex:
+        1;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+}
+
+
+.course-tag {
+    display:
+        inline-flex;
+
+    padding:
+        5px 10px;
+
+    margin-bottom:
+        10px;
+
+    border:
+        1px solid
+        rgba(255, 60, 60, 0.16);
+
+    border-radius:
+        7px;
+
+    background:
+        rgba(255, 40, 40, 0.06);
+
+    color:
+        #ff7373;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.8px;
+}
+
+
+.course-card h3 {
+    font-size:
+        25px;
+
+    line-height:
+        1.25;
+
+    letter-spacing:
+        -0.6px;
+
+    margin-bottom:
+        7px;
+}
+
+
+.course-card p {
+    max-width:
+        700px;
+
+    color:
+        #89938d;
+
+    font-size:
+        14px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.lecture-count,
+.coming-soon {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    margin-top:
+        15px;
+
+    padding:
+        5px 10px;
+
+    border-radius:
+        100px;
+
+    background:
+        rgba(0, 255, 120, 0.05);
+
+    border:
+        1px solid
+        rgba(0, 255, 120, 0.10);
+
+    color:
+        #63e69a;
+
+    font-size:
+        10px;
+
+    font-weight:
+        600;
+}
+
+
+/* =========================================================
+   COURSE BUTTON
+========================================================= */
+
+.course-button {
+    position:
+        relative;
+
+    z-index:
+        5;
+
+    flex-shrink:
+        0;
+
+    padding:
+        12px 20px;
+
+    border:
+        1px solid
+        rgba(255, 60, 60, 0.20);
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(255, 40, 40, 0.07);
+
+    color:
+        #ff7373;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    transition:
+        all 0.3s ease;
+}
+
+
+.course-button:hover {
+    color:
+        #ffffff;
+
+    border-color:
+        #ff3b3b;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3030,
+            #d91515
+        );
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255, 40, 40, 0.25);
+}
+
+
+.course-button.disabled {
+    opacity:
+        0.3;
+
+    cursor:
+        not-allowed;
+}
+
+
+/* =========================================================
+   LECTURES DIVIDER
+========================================================= */
+
+.lectures::before {
+    content:
+        "";
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    height:
+        1px;
+
+    margin-bottom:
+        85px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 50, 50, 0.35),
+            rgba(0, 255, 120, 0.30),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   LECTURE CARD
+========================================================= */
+
+.lecture-card {
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    padding:
+        25px 27px;
+
+    margin-bottom:
+        15px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    border-radius:
+        18px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    overflow:
+        hidden;
+
+    cursor:
+        pointer;
+
+    animation:
+        cardAppear 0.7s ease both;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+@keyframes cardAppear {
+
+    from {
+        opacity:
+            0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* LEFT GREEN/RED LINE */
+
+.lecture-card::before {
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        15%;
+
+    width:
+        3px;
+
+    height:
+        70%;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ff3030,
+            #31e981
+        );
+
+    transform:
+        scaleY(0);
+
+    transform-origin:
+        center;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.lecture-card:hover::before {
+    transform:
+        scaleY(1);
+}
+
+
+.lecture-card:hover {
+    transform:
+        translateX(7px);
+
+    border-color:
+        rgba(0, 255, 120, 0.17);
+
+    background:
+        rgba(0, 255, 120, 0.025);
+
+    box-shadow:
+        0 18px 45px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   LECTURE CONTENT
+========================================================= */
+
+.lecture-content {
+    flex:
+        1;
+
+    min-width:
+        0;
+}
+
+
+.lecture-number {
+    display:
+        inline-flex;
+
+    padding:
+        5px 9px;
+
+    margin-bottom:
+        7px;
+
+    border:
+        1px solid
+        rgba(255, 60, 60, 0.16);
+
+    border-radius:
+        7px;
+
+    background:
+        rgba(255, 40, 40, 0.06);
+
+    color:
+        #ff7373;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.6px;
+}
+
+
+.lecture-card h3 {
+    font-size:
+        19px;
+
+    line-height:
+        1.35;
+
+    letter-spacing:
+        -0.3px;
+
+    margin-bottom:
+        5px;
+}
+
+
+.lecture-card p {
+    max-width:
+        680px;
+
+    color:
+        #818b85;
+
+    font-size:
+        13px;
+}
+
+
+/* =========================================================
+   LECTURE BUTTONS
+========================================================= */
+
+.lecture-buttons {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    flex-shrink:
+        0;
+}
+
+
+.lecture-buttons a {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        6px;
+
+    min-width:
+        88px;
+
+    padding:
+        10px 14px;
+
+    border-radius:
+        10px;
+
+    text-decoration:
+        none;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    transition:
+        all 0.3s ease;
+}
+
+
+/* =========================================================
+   WATCH — RED
+========================================================= */
+
+.watch-button {
+    border:
+        1px solid
+        rgba(255, 50, 50, 0.25);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3b3b,
+            #d71919
+        );
+
+    color:
+        #ffffff;
+
+    box-shadow:
+        0 5px 18px
+        rgba(255, 40, 40, 0.10);
+}
+
+
+.watch-button:hover {
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255, 40, 40, 0.30);
+}
+
+
+/* =========================================================
+   NOTES — GREEN
+========================================================= */
+
+.notes-button {
+    border:
+        1px solid
+        rgba(0, 255, 120, 0.20);
+
+    background:
+        rgba(0, 255, 120, 0.06);
+
+    color:
+        #5bea95;
+}
+
+
+.notes-button:hover {
+    border-color:
+        #31e981;
+
+    background:
+        rgba(0, 255, 120, 0.12);
+
+    color:
+        #ffffff;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 10px 28px
+        rgba(0, 255, 120, 0.18);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-state {
+    padding:
+        55px 25px;
+
+    text-align:
+        center;
+
+    border:
+        1px dashed
+        rgba(255, 255, 255, 0.10);
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(255, 255, 255, 0.018);
+}
+
+
+.empty-state h3 {
+    font-size:
+        18px;
+
+    margin-bottom:
+        6px;
+}
+
+
+.empty-state p {
+    color:
+        #747e78;
+
+    font-size:
+        13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding:
+        30px 20px;
+
+    text-align:
+        center;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    color:
+        #66716a;
+
+    font-size:
+        11px;
+
+    background:
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding:
+            18px 5%;
+    }
+
+    .header nav {
+        gap:
+            17px;
+    }
+
+    .courses,
+    .lectures {
+        width:
+            90%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+
+        position:
+            relative;
+
+        flex-direction:
+            column;
+
+        gap:
+            15px;
+
+        padding:
+            18px 20px;
+    }
+
+
+    .header nav {
+
+        width:
+            100%;
+
+        justify-content:
+            center;
+
+        flex-wrap:
+            wrap;
+
+        gap:
+            10px 16px;
+    }
+
+
+    .header nav a {
+        font-size:
+            12px;
+    }
+
+
+    .learn-hero {
+        padding:
+            80px 20px 70px;
+    }
+
+
+    .learn-hero h1 {
+
+        font-size:
+            43px;
+
+        letter-spacing:
+            -2px;
+    }
+
+
+    .learn-hero p {
+        font-size:
+            14px;
+    }
+
+
+    .courses,
+    .lectures {
+        width:
+            90%;
+    }
+
+
+    .courses {
+        padding-bottom:
+            80px;
+    }
+
+
+    .lectures {
+        padding-bottom:
+            90px;
+    }
+
+
+    .section-heading h2 {
+        font-size:
+            28px;
+    }
+
+
+    /* COURSE */
+
+    .course-card {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        padding:
+            25px;
+
+        gap:
+            22px;
+    }
+
+
+    .course-card h3 {
+        font-size:
+            22px;
+    }
+
+
+    .course-button {
+        width:
+            100%;
+    }
+
+
+    /* LECTURE */
+
+    .lectures::before {
+        margin-bottom:
+            60px;
+    }
+
+
+    .lecture-card {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        padding:
+            22px;
+
+        gap:
+            18px;
+    }
+
+
+    .lecture-card:hover {
+        transform:
+            translateY(-4px);
+    }
+
+
+    .lecture-buttons {
+        width:
+            100%;
+    }
+
+
+    .lecture-buttons a {
+        flex:
+            1;
+
+        min-width:
+            0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .learn-hero h1 {
+        font-size:
+            37px;
+    }
+
+
+    .small-title {
+        font-size:
+            9px;
+
+        letter-spacing:
+            1.8px;
+    }
+
+
+    .courses,
+    .lectures {
+        width:
+            92%;
+    }
+
+
+    .lecture-buttons {
+        flex-direction:
+            column;
+    }
+
+
+    .lecture-buttons a {
+        width:
+            100%;
+    }
+}
