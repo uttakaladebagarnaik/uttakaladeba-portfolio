@@ -102,10 +102,10 @@ const lectures = [
             "Start your Python programming journey from the basics.",
 
         youtube:
-            "https://www.youtube.com/",
+            "https://youtu.be/q1FdfPw_ePM?si=iMAgyC33ny1-Wp-h",
 
         notes:
-            ""
+            "https://drive.google.com/file/d/1mvWYgH77tWKG_ozk1HGY9zojoEE8qGCc/view?usp=drive_link"
     },
 
 
@@ -121,16 +121,16 @@ const lectures = [
         lecture: "Lecture 02",
 
         title:
-            "Variables & Data Types",
+            "Variables & Data Types strings",
 
         description:
             "Understand variables and basic Python data types.",
 
         youtube:
-            "https://www.youtube.com/",
+            "https://youtu.be/J0onrHoC0V4?si=nY2stZ5fyyb-BKBw",
 
         notes:
-            ""
+            "https://drive.google.com/file/d/13mnY2CXDuswviP5prudpxTdTRsHsUb9B/view?usp=drive_link"
     },
 
 
@@ -152,10 +152,10 @@ const lectures = [
             "Learn how to take user input and convert data types in Python.",
 
         youtube:
-            "https://www.youtube.com/",
+            "https://youtu.be/s6G5GgaXbwQ?si=qFsO50qE74xinKaT",
 
         notes:
-            ""
+            "https://drive.google.com/file/d/1E56620TpiYMUVhXLLQptRNECdp8Yrdm0/view?usp=drive_link"
     },
 
 
@@ -163,19 +163,15 @@ const lectures = [
   /* -------------------------------------------------
        PYTHON — LECTURE 04
     ------------------------------------------------- */
-
-
-
-
     {
     id: 4,
 
     course: "python",
 
-    lecture: "Lecture 04",
+    lecture: "Lecture 04 part-01",
 
     title:
-        "Python Strings",
+        "Python ARITHMETIC OPERATORS ",
 
     description:
         "Learn strings and basic string operations in Python.",
@@ -184,7 +180,7 @@ const lectures = [
         "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
 
     notes:
-        "notes/python/lecture-04.pdf"
+        "https://drive.google.com/file/d/1wuOtSYC-zv5weh7CIBg_w3drZUaKTOps/view?usp=drive_link"
 }
 
 ];
