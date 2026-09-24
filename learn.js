@@ -161,7 +161,7 @@ const lectures = [
 
 
   /* -------------------------------------------------
-       PYTHON — LECTURE 04
+       PYTHON — LECTURE 04 PART-01
     ------------------------------------------------- */
     {
     id: 4,
@@ -181,12 +181,89 @@ const lectures = [
 
     notes:
         "https://drive.google.com/file/d/1wuOtSYC-zv5weh7CIBg_w3drZUaKTOps/view?usp=drive_link"
+},
+
+
+/* -------------------------------------------------
+       PYTHON — LECTURE 04 PART-02
+    ------------------------------------------------- */
+    {
+    id: 5,
+
+    course: "python",
+
+    lecture: "Lecture 04 part-02",
+
+    title:
+        "Python Comparison Operators ",
+
+    description:
+        " In this lecture, we learn about Comparison Operators in Python.",
+
+    youtube:
+        "https://youtu.be/EaQuLFp0hJ0",
+
+    notes:
+        "https://drive.google.com/file/d/1wuOtSYC-zv5weh7CIBg_w3drZUaKTOps/view?usp=drive_link"
+},
+
+
+
+/* -------------------------------------------------
+       PYTHON — LECTURE 04 PART-03
+    ------------------------------------------------- */
+    {
+    id: 5,
+
+    course: "python",
+
+    lecture: "Lecture 04 part-03",
+
+    title:
+        "Operators in Python | Logical, Membership, Identity & Precedence ",
+
+    description:
+        "In this lecture, we learn 4 important Python Operators.",
+
+    youtube:
+        "https://youtu.be/awKb3Of7sE0",
+
+    notes:
+        "https://drive.google.com/file/d/1wuOtSYC-zv5weh7CIBg_w3drZUaKTOps/view?usp=drive_link"
+},
+
+
+/* -------------------------------------------------
+       PYTHON — LECTURE 05
+    ------------------------------------------------- */
+    {
+    id: 5,
+
+    course: "python",
+
+    lecture: "Lecture 05",
+
+    title:
+        "How to Make a Basic Calculator Using Operators in Python  ",
+
+    description:
+        "In this video, we build a Basic Calculator using Python Operators.",
+
+    youtube:
+        "https://youtu.be/kG-kNnwT0zQ",
+
+    notes:
+        ""
 }
+
+
+
+
 
 ];
 
 
-
+    
 
 
 /* =====================================================
