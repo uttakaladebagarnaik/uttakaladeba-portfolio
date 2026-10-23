@@ -1368,7 +1368,7 @@
                 "B.Tech CSE Student 🎓",
                 "Cyber Security & Systems 🛡️",
                 "Smart India Hackathon Finalist ⚡",
-                "AI & Full-Stack Builder 💻",
+                "AI & Systems Builder 🤖",
                 "Lifelong Tech Explorer 🚀"
             ], 2400);
         }
