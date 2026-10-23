@@ -2,1133 +2,416 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical skills and competencies of Uttakaladeba Garnaik — HTML, CSS, JavaScript, Python, SQL, Git and more.">
+    <meta name="author" content="Uttakaladeba Garnaik">
+    <meta name="theme-color" content="#06080f">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Skills and technologies of Uttakaladeba Garnaik."
-    >
-
-    <meta
-        name="author"
-        content="Uttakaladeba Garnaik"
-    >
-
-    <title>
-        Skills — Uttakaladeba Garnaik
-    </title>
+    <title>Skills — Uttakaladeba Garnaik</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
-    <!-- ==================================================
-         BACKGROUND
-    =================================================== -->
-
+    <!-- Background System -->
     <div class="background">
-
-        <div class="glow glow-blue"></div>
-
-        <div class="glow glow-red"></div>
-
-        <div class="glow glow-white"></div>
-
+        <canvas id="cyberCanvas"></canvas>
         <div class="background-grid"></div>
-
-        <div class="particle particle-1"></div>
-
-        <div class="particle particle-2"></div>
-
-        <div class="particle particle-3"></div>
-
-        <div class="particle particle-4"></div>
-
+        <div class="glow-orb glow-blue"></div>
+        <div class="glow-orb glow-purple"></div>
+        <div class="glow-orb glow-cyan"></div>
     </div>
 
-
-
-    <!-- ==================================================
-         NAVIGATION
-    =================================================== -->
-
+    <!-- Universal Navigation -->
     <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="index.html">UG<span>_</span></a>
+            </div>
 
-        <div class="nav-logo">
-
-            <a href="index.html">
-
-                UG<span>_</span>
-
-            </a>
-
+            <div class="nav-status-badge">
+                <span class="radar-dot"></span>
+                <span>OPEN TO COLLABS</span>
+            </div>
         </div>
-
 
         <nav class="nav-links">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a
-                href="skills.html"
-                class="active"
-            >
-                Skills
-            </a>
-
-            <a href="projects.html">
-                Projects
-            </a>
-
-            <a href="hackathons.html">
-                Hackathons
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="hackathons.html">Hackathons</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
-
-        <a
-            href="contact.html"
-            class="nav-button"
-        >
-
-            Let's Connect
-
-            <span>↗</span>
-
-        </a>
-
-    </header>
-
-
-
-    <!-- ==================================================
-         MAIN CONTENT
-    =================================================== -->
-
-    <main>
-
-
-        <!-- ==================================================
-             SKILLS HERO
-        =================================================== -->
-
-        <section class="skills-hero">
-
-
-            <div class="skills-index">
-
-                <span>
-                    02
-                </span>
-
-                <div></div>
-
-                <span>
-                    SKILLS
-                </span>
-
-            </div>
-
-
-            <div class="skills-heading">
-
-                <p class="section-label">
-                    WHAT I WORK WITH
-                </p>
-
-
-                <h1>
-
-                    Tools I use
-                    <br>
-
-                    <span>
-                        to build ideas.
-                    </span>
-
-                </h1>
-
-
-                <p class="skills-intro">
-
-                    A growing collection of technologies,
-                    tools and skills I'm learning throughout
-                    my Computer Science journey.
-
-                </p>
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- ==================================================
-             SKILL CORE / ORBIT
-        =================================================== -->
-
-        <section class="skills-core">
-
-
-            <div class="core-visual">
-
-
-                <div class="core-ring core-ring-one"></div>
-
-                <div class="core-ring core-ring-two"></div>
-
-                <div class="core-ring core-ring-three"></div>
-
-
-                <div class="core-center">
-
-                    <span>
-                        UG
-                    </span>
-
-                    <strong>
-                        DEV
-                    </strong>
-
-                </div>
-
-
-                <!-- TECHNOLOGY NODES -->
-
-                <div class="tech-node node-html">
-                    HTML
-                </div>
-
-                <div class="tech-node node-css">
-                    CSS
-                </div>
-
-                <div class="tech-node node-js">
-                    JS
-                </div>
-
-                <div class="tech-node node-python">
-                    PY
-                </div>
-
-                <div class="tech-node node-sql">
-                    SQL
-                </div>
-
-                <div class="tech-node node-git">
-                    GIT
-
-                
-
-
-            </div>
-
-
-
-            </div><!-- /.core-visual -->
-
-            <div class="core-content">
-
-                <p class="story-label">
-                    CURRENT STACK
-                </p>
-
-
-                <h2>
-
-                    Building my
-                    <span>
-                        foundation.
-                    </span>
-
-                </h2>
-
-
-                <p>
-
-                    I'm currently focusing on building
-                    strong fundamentals instead of simply
-                    collecting technologies.
-
-                </p>
-
-
-                <p>
-
-                    Each technology I learn becomes another
-                    tool I can use to create projects,
-                    experiment with ideas and participate
-                    in hackathons.
-
-                </p>
-
-
-                <div class="learning-status">
-
-                    <span class="status-dot"></span>
-
-                    <span>
-                        ALWAYS LEARNING
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- ==================================================
-             DEVELOPMENT SKILLS
-        =================================================== -->
-
-        <section class="skills-section">
-
-
-            <div class="skills-section-heading">
-
-                <p class="section-label">
-                    DEVELOPMENT
-                </p>
-
-
-                <h2>
-
-                    Technologies I'm
-                    <span>
-                        learning & using.
-                    </span>
-
-                </h2>
-
-            </div>
-
-
-
-            <div class="skills-grid">
-
-
-                <!-- ==================================================
-                     SKILL 01 — HTML
-                =================================================== -->
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            01
-                        </span>
-
-                        <span class="skill-symbol">
-                            &lt;/&gt;
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        HTML
-                    </h3>
-
-
-                    <p>
-
-                        Semantic structure,
-                        accessible layouts and
-                        clean website architecture.
-
-                    </p>
-
-
-                    <div class="skill-tags">
-
-                        <span>
-                            WEB
-                        </span>
-
-                        <span>
-                            STRUCTURE
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ==================================================
-                     SKILL 02 — CSS
-                =================================================== -->
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            02
-                        </span>
-
-                        <span class="skill-symbol">
-                            {}
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        CSS
-                    </h3>
-
-
-                    <p>
-
-                        Responsive layouts,
-                        animations, modern UI
-                        and visual design.
-
-                    </p>
-
-
-                    <div class="skill-tags">
-
-                        <span>
-                            UI
-                        </span>
-
-                        <span>
-                            RESPONSIVE
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ==================================================
-                     SKILL 03 — JAVASCRIPT
-                =================================================== -->
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            03
-                        </span>
-
-                        <span class="skill-symbol">
-                            JS
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-
-                    <p>
-
-                        Interactive interfaces,
-                        DOM manipulation and
-                        frontend logic.
-
-                    </p>
-
-
-                    <div class="skill-tags">
-
-                        <span>
-                            LOGIC
-                        </span>
-
-                        <span>
-                            DOM
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ==================================================
-                     SKILL 04 — PYTHON
-                =================================================== -->
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            04
-                        </span>
-
-                        <span class="skill-symbol">
-                            PY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Python
-                    </h3>
-
-
-                    <p>
-
-                        Programming fundamentals,
-                        problem solving and
-                        automation experiments.
-
-                    </p>
-
-
-                    <div class="skill-tags">
-
-                        <span>
-                            PROGRAMMING
-                        </span>
-
-                        <span>
-                            LOGIC
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ==================================================
-                     SKILL 05 — SQL
-                =================================================== -->
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            05
-                        </span>
-
-                        <span class="skill-symbol">
-                            DB
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        SQL
-                    </h3>
-
-
-                    <p>
-
-                        Databases, queries,
-                        relationships and
-                        structured data.
-
-                    </p>
-
-
-                    <div class="skill-tags">
-
-                        <span>
-                            DATABASE
-                        </span>
-
-                        <span>
-                            MYSQL
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ==================================================
-                     SKILL 06 — GIT & GITHUB
-                =================================================== -->
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            06
-                        </span>
-
-                        <span class="skill-symbol">
-                            GIT
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Git & GitHub
-                    </h3>
-
-
-                    <p>
-
-                        Version control,
-                        repositories, commits
-                        and project collaboration.
-
-                    </p>
-
-
-                    <div class="skill-tags">
-
-                        <span>
-                            GIT
-                        </span>
-
-                        <span>
-                            GITHUB
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-<!-- ==================================================
-     SKILL 07 — DATA ANALYSIS (EXCEL)
-================================================== -->
-
-<article class="skill-card">
-
-    <div class="skill-top">
-        <span class="skill-number">07</span>
-        <span class="skill-symbol">EX</span>
-    </div>
-
-    <h3>Data Analysis (Excel)</h3>
-
-    <p>
-        Spreadsheet analysis, formulas,
-        data organization and extracting
-        useful insights from data.
-    </p>
-
-    <div class="skill-tags">
-        <span>DATA ANALYSIS</span>
-        <span>EXCEL</span>
-    </div>
-
-</article>
-
-
-<!-- ==================================================
-     SKILL 08 — MYSQL
-================================================== -->
-
-<article class="skill-card">
-
-    <div class="skill-top">
-        <span class="skill-number">08</span>
-        <span class="skill-symbol">DB</span>
-    </div>
-
-    <h3>MySQL</h3>
-
-    <p>
-        Relational databases, table design,
-        queries and managing structured data.
-    </p>
-
-    <div class="skill-tags">
-        <span>DATABASE</span>
-        <span>MYSQL</span>
-    </div>
-
-</article>
-
-
-<!-- ==================================================
-     SKILL 09 — SQL
-================================================== -->
-
-<article class="skill-card">
-
-    <div class="skill-top">
-        <span class="skill-number">09</span>
-        <span class="skill-symbol">SQL</span>
-    </div>
-
-    <h3>SQL</h3>
-
-    <p>
-        Writing queries, filtering records,
-        joins, aggregation and data retrieval.
-    </p>
-
-    <div class="skill-tags">
-        <span>QUERIES</span>
-        <span>DATA</span>
-    </div>
-
-</article>
-
-
-<!-- ==================================================
-     SKILL 10 — POSTGRESQL
-================================================== -->
-
-<article class="skill-card">
-
-    <div class="skill-top">
-        <span class="skill-number">10</span>
-        <span class="skill-symbol">PG</span>
-    </div>
-
-    <h3>PostgreSQL</h3>
-
-    <p>
-        Working with relational databases,
-        SQL queries and structured data.
-    </p>
-
-    <div class="skill-tags">
-        <span>DATABASE</span>
-        <span>POSTGRESQL</span>
-    </div>
-
-</article>
-
-
-<!-- ==================================================
-     SKILL 11 — GOOGLE SHEETS
-================================================== -->
-
-<article class="skill-card">
-
-    <div class="skill-top">
-        <span class="skill-number">11</span>
-        <span class="skill-symbol">GS</span>
-    </div>
-
-    <h3>Google Sheets</h3>
-
-    <p>
-        Spreadsheet formulas, organizing data,
-        sorting, filtering and collaboration.
-    </p>
-
-    <div class="skill-tags">
-        <span>SPREADSHEETS</span>
-        <span>PRODUCTIVITY</span>
-    </div>
-
-</article>
-
-
-<!-- ==================================================
-     SKILL 12 — DATA CLEANING
-================================================== -->
-
-<article class="skill-card">
-
-    <div class="skill-top">
-        <span class="skill-number">12</span>
-        <span class="skill-symbol">DC</span>
-    </div>
-
-    <h3>Data Cleaning</h3>
-
-    <p>
-        Identifying missing values, removing
-        duplicates and improving data quality.
-    </p>
-
-    <div class="skill-tags">
-        <span>DATA QUALITY</span>
-        <span>PREPROCESSING</span>
-    </div>
-
-</article>
-
-
-
-                <!-- ==================================================
-                     FUTURE SLOT 08
-                     COPY THIS CARD WHEN NEEDED
-                =================================================== -->
-
-                <!--
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            08
-                        </span>
-
-                        <span class="skill-symbol">
-                            N
-                        </span>
-
-                    </div>
-
-                    <h3>
-                        Node.js
-                    </h3>
-
-                    <p>
-
-                        Backend development,
-                        APIs and server-side
-                        JavaScript.
-
-                    </p>
-
-                    <div class="skill-tags">
-
-                        <span>
-                            BACKEND
-                        </span>
-
-                        <span>
-                            JAVASCRIPT
-                        </span>
-
-                    </div>
-
-                </article>
-
-                -->
-
-
-                <!-- ==================================================
-                     FUTURE SLOT 09
-                =================================================== -->
-
-                <!--
-
-                <article class="skill-card">
-
-                    <div class="skill-top">
-
-                        <span class="skill-number">
-                            09
-                        </span>
-
-                        <span class="skill-symbol">
-                            DB
-                        </span>
-
-                    </div>
-
-                    <h3>
-                        MongoDB
-                    </h3>
-
-                    <p>
-
-                        NoSQL database technology
-                        for modern applications.
-
-                    </p>
-
-                    <div class="skill-tags">
-
-                        <span>
-                            DATABASE
-                        </span>
-
-                        <span>
-                            NOSQL
-                        </span>
-
-                    </div>
-
-                </article>
-
-                -->
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             TOOLS & WORKFLOW
-        =================================================== -->
-
-        <section class="tools-section">
-
-
-            <div class="tools-heading">
-
-                <p class="section-label">
-                    TOOLS & WORKFLOW
-                </p>
-
-
-                <h2>
-
-                    More tools
-                    <span>
-                        in my workflow.
-                    </span>
-
-                </h2>
-
-            </div>
-
-
-            <div class="tools-list">
-
-
-                <div class="tool-item">
-
-                    <span>
-                        01
-                    </span>
-
-                    <strong>
-                        VS Code
-                    </strong>
-
-                    <small>
-                        CODE EDITOR
-                    </small>
-
-                </div>
-
-
-                <div class="tool-item">
-
-                    <span>
-                        02
-                    </span>
-
-                    <strong>
-                        GitHub
-                    </strong>
-
-                    <small>
-                        VERSION CONTROL
-                    </small>
-
-                </div>
-
-
-                <div class="tool-item">
-
-                    <span>
-                        03
-                    </span>
-
-                    <strong>
-                        MySQL
-                    </strong>
-
-                    <small>
-                        DATABASE
-                    </small>
-
-                </div>
-
-
-                <div class="tool-item">
-
-                    <span>
-                        04
-                    </span>
-
-                    <strong>
-                        Linux
-                    </strong>
-
-                    <small>
-                        ENVIRONMENT
-                    </small>
-
-                </div>
-
-
-                <div class="tool-item">
-
-                    <span>
-                        05
-                    </span>
-
-                    <strong>
-                        Terminal
-                    </strong>
-
-                    <small>
-                        WORKFLOW
-                    </small>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             LEARNING PHILOSOPHY
-        =================================================== -->
-
-        <section class="skills-philosophy">
-
-
-            <div class="philosophy-number">
-                03
-            </div>
-
-
-            <div class="philosophy-content">
-
-                <p class="section-label">
-                    THE MINDSET
-                </p>
-
-
-                <h2>
-
-                    Skills aren't
-                    <span>
-                        finished.
-                    </span>
-
-                </h2>
-
-
-                <p>
-
-                    Technology keeps changing.
-                    So instead of thinking about
-                    a fixed list of skills, I'm focused
-                    on becoming better at learning,
-                    building and adapting.
-
-                </p>
-
-
-                <div class="philosophy-line">
-
-                    <span></span>
-
-                    <strong>
-                        LEARN → BUILD → BREAK → IMPROVE
-                    </strong>
-
-                    <span></span>
-
-                </div>
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- ==================================================
-             NEXT PAGE
-        =================================================== -->
-
-        <section class="next-page">
-
-            <p>
-                NEXT
-            </p>
-
-
-            <a href="projects.html">
-
-                Explore my
-
-                <span>
-                    projects
-                </span>
-
-                <b>
-                    ↗
-                </b>
-
+        <div class="nav-actions">
+            <button class="sound-toggle-btn" aria-label="Toggle Sound Effects">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <span>SFX ON</span>
+            </button>
+
+            <a href="contact.html" class="nav-cta-btn">
+                <span>Let's Connect</span>
+                <span>↗</span>
             </a>
 
+            <button class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="mobile-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="hackathons.html">Hackathons</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-drawer-bottom">
+            <div class="nav-status-badge">
+                <span class="radar-dot"></span>
+                <span>BHUBANESWAR · INDIA</span>
+            </div>
+            <a href="contact.html" class="primary-button" style="width: 100%; justify-content: center;">
+                <span>Let's Connect ↗</span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Skills Hero -->
+        <section class="skills-hero">
+            <div class="page-hero-top">
+                <span class="page-hero-number">02 / SKILLS</span>
+                <span class="section-label">TECHNICAL TOOLKIT</span>
+            </div>
+
+            <div class="section-heading">
+                <h2>
+                    Technologies, tools
+                    <span>& core foundations.</span>
+                </h2>
+                <p>
+                    I focus on deep conceptual understanding rather than shallow syntax. A solid mastery of fundamentals
+                    enables fast adoption of new frameworks, libraries, and architectural paradigms.
+                </p>
+            </div>
         </section>
 
+        <!-- Orbital Core Radar -->
+        <section class="skills-core reveal">
+            <div class="core-visual">
+                <div class="core-ring core-ring-one"></div>
+                <div class="core-ring core-ring-two"></div>
+                <div class="core-ring core-ring-three"></div>
 
+                <div class="core-center">
+                    <span>UG</span>
+                    <strong>CORE STACK</strong>
+                </div>
+
+                <div class="tech-node node-html">HTML5</div>
+                <div class="tech-node node-css">CSS3</div>
+                <div class="tech-node node-js">JS / ES6</div>
+                <div class="tech-node node-python">PYTHON</div>
+                <div class="tech-node node-sql">SQL</div>
+                <div class="tech-node node-git">GIT</div>
+            </div>
+
+            <div class="core-content">
+                <p class="section-label">01 // PHILOSOPHY</p>
+                <h2 style="font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 16px;">
+                    Strong roots create
+                    <span style="color: var(--cyan);">powerful branches.</span>
+                </h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 18px;">
+                    Frameworks and tools come and go, but the core fundamentals of computing, data structures, network
+                    protocols, and clean code principles remain timeless.
+                </p>
+                <div class="nav-status-badge" style="display: inline-flex;">
+                    <span class="radar-dot"></span>
+                    <span>CONSTANTLY EVOLVING</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Filter Tabs & Skills Grid -->
+        <section class="skills-section reveal">
+            <div class="section-heading" style="text-align: center;">
+                <p class="section-label">02 // INVENTORY</p>
+                <h2>
+                    Skills Matrix
+                    <span>& Proficiency</span>
+                </h2>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all" data-target=".skill-card">All Skills</button>
+                <button class="filter-btn" data-filter="language" data-target=".skill-card">Languages</button>
+                <button class="filter-btn" data-filter="frontend" data-target=".skill-card">Frontend</button>
+                <button class="filter-btn" data-filter="backend" data-target=".skill-card">Backend & Data</button>
+                <button class="filter-btn" data-filter="tools" data-target=".skill-card">Tools & DevOps</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- HTML5 -->
+                <article class="skill-card filterable-item tilt-card" data-category="frontend">
+                    <div class="skill-top">
+                        <span class="skill-number">01</span>
+                        <span class="skill-symbol">&lt;/&gt;</span>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility (ARIA), modern meta architecture, and search engine optimization.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>SEMANTICS</span>
+                        <span>SEO</span>
+                        <span>ACCESSIBILITY</span>
+                    </div>
+                </article>
+
+                <!-- CSS3 -->
+                <article class="skill-card filterable-item tilt-card" data-category="frontend">
+                    <div class="skill-top">
+                        <span class="skill-number">02</span>
+                        <span class="skill-symbol">{ }</span>
+                    </div>
+                    <h3>CSS3 & Modern UI</h3>
+                    <p>Responsive design, Flexbox, CSS Grid, keyframe animations, glassmorphism, and custom properties.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>RESPONSIVE</span>
+                        <span>ANIMATIONS</span>
+                        <span>FLEX/GRID</span>
+                    </div>
+                </article>
+
+                <!-- JavaScript -->
+                <article class="skill-card filterable-item tilt-card" data-category="language frontend">
+                    <div class="skill-top">
+                        <span class="skill-number">03</span>
+                        <span class="skill-symbol">JS</span>
+                    </div>
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Modern DOM manipulation, async/await, closures, fetch API, canvas graphics, and event architectures.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>ES6+</span>
+                        <span>ASYNC/AWAIT</span>
+                        <span>APIs</span>
+                    </div>
+                </article>
+
+                <!-- Python -->
+                <article class="skill-card filterable-item tilt-card" data-category="language backend">
+                    <div class="skill-top">
+                        <span class="skill-number">04</span>
+                        <span class="skill-symbol">PY</span>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Core programming, automation scripts, data logic, file handling, desktop agents, and teaching fundamentals.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>AUTOMATION</span>
+                        <span>DATA LOGIC</span>
+                        <span>SCRIPTS</span>
+                    </div>
+                </article>
+
+                <!-- SQL & MySQL -->
+                <article class="skill-card filterable-item tilt-card" data-category="backend">
+                    <div class="skill-top">
+                        <span class="skill-number">05</span>
+                        <span class="skill-symbol">SQL</span>
+                    </div>
+                    <h3>SQL & MySQL</h3>
+                    <p>Relational database architecture, complex joins, indexing, table normalization, and aggregate queries.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>RELATIONAL DB</span>
+                        <span>JOINS</span>
+                        <span>OPTIMIZATION</span>
+                    </div>
+                </article>
+
+                <!-- PostgreSQL -->
+                <article class="skill-card filterable-item tilt-card" data-category="backend">
+                    <div class="skill-top">
+                        <span class="skill-number">06</span>
+                        <span class="skill-symbol">PG</span>
+                    </div>
+                    <h3>PostgreSQL</h3>
+                    <p>Advanced enterprise relational databases, schema design, constraints, and data integrity for applications.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>76%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 76%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>SCHEMAS</span>
+                        <span>CONSTRAINTS</span>
+                        <span>BACKEND</span>
+                    </div>
+                </article>
+
+                <!-- Git & GitHub -->
+                <article class="skill-card filterable-item tilt-card" data-category="tools">
+                    <div class="skill-top">
+                        <span class="skill-number">07</span>
+                        <span class="skill-symbol">GIT</span>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Branching workflows, commit discipline, pull requests, resolving merge conflicts, and team collaboration.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>VERSION CONTROL</span>
+                        <span>BRANCHING</span>
+                        <span>COLLAB</span>
+                    </div>
+                </article>
+
+                <!-- Data Analysis & Cleaning -->
+                <article class="skill-card filterable-item tilt-card" data-category="backend tools">
+                    <div class="skill-top">
+                        <span class="skill-number">08</span>
+                        <span class="skill-symbol">DATA</span>
+                    </div>
+                    <h3>Data Analysis & Cleaning</h3>
+                    <p>Data normalization, Excel / Google Sheets formula logic, structured dataset cleaning, and insight extraction.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>EXCEL</span>
+                        <span>SHEETS</span>
+                        <span>DATA CLEANING</span>
+                    </div>
+                </article>
+
+                <!-- Node.js & APIs -->
+                <article class="skill-card filterable-item tilt-card" data-category="backend language">
+                    <div class="skill-top">
+                        <span class="skill-number">09</span>
+                        <span class="skill-symbol">NODE</span>
+                    </div>
+                    <h3>Node.js & Express</h3>
+                    <p>Building RESTful APIs, routing, middleware integration, HTTP request handling, and backend logic.</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-info">
+                            <span>Proficiency</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-meter-bar">
+                            <div class="skill-meter-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>REST APIS</span>
+                        <span>EXPRESS</span>
+                        <span>SERVERS</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Next Page Section -->
+        <section class="next-page reveal">
+            <p>NEXT UP</p>
+            <a href="projects.html">
+                Explore my <span>featured projects</span> ↗
+            </a>
+        </section>
     </main>
 
-
-
-    <!-- ==================================================
-         FOOTER
-    =================================================== -->
-
+    <!-- Universal Footer -->
     <footer>
-
-        <div>
-            © 2026 Uttakaladeba Garnaik
-        </div>
-
-
-        <div>
-            Built with HTML · CSS · JavaScript
-        </div>
-
-
-        <div>
+        <div class="footer-logo">
             UG<span>_</span>
         </div>
 
+        <div>
+            © <span class="current-year">2026</span> Uttakaladeba Garnaik. All rights reserved.
+        </div>
+
+        <div>
+            Engineered with HTML5 · CSS3 · Vanilla JS
+        </div>
     </footer>
 
-
-
-    <!-- ==================================================
-         JAVASCRIPT
-    =================================================== -->
-
     <script src="script.js"></script>
-
 </body>
 
 </html>

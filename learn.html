@@ -2,172 +2,174 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn With Me — Free programming lectures, tutorials, and notes by Uttakaladeba Garnaik.">
+    <meta name="author" content="Uttakaladeba Garnaik">
+    <meta name="theme-color" content="#06080f">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <title>Learn With Me — Uttakaladeba Garnaik</title>
 
-    <title>Learn With Me | Uttakaladeba</title>
-
-    <link rel="stylesheet" href="learn.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- Background System -->
+    <div class="background">
+        <canvas id="cyberCanvas"></canvas>
+        <div class="background-grid"></div>
+        <div class="glow-orb glow-blue"></div>
+        <div class="glow-orb glow-purple"></div>
+        <div class="glow-orb glow-cyan"></div>
+    </div>
 
-    <!-- =================================================
-         HEADER
-    ================================================== -->
+    <!-- Universal Navigation -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="index.html">UG<span>_</span></a>
+            </div>
 
-    <header class="header">
+            <div class="nav-status-badge">
+                <span class="radar-dot"></span>
+                <span>OPEN TO COLLABS</span>
+            </div>
+        </div>
 
-        <a href="index.html" class="logo">
-            Uttakaladeba
-        </a>
-
-
-        <nav>
-
+        <nav class="nav-links">
             <a href="index.html">Home</a>
-
             <a href="about.html">About</a>
-
             <a href="skills.html">Skills</a>
-
             <a href="projects.html">Projects</a>
-
             <a href="hackathons.html">Hackathons</a>
-
+            <a href="learn.html" class="active">Learn</a>
             <a href="contact.html">Contact</a>
-
         </nav>
 
+        <div class="nav-actions">
+            <button class="sound-toggle-btn" aria-label="Toggle Sound Effects">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <span>SFX ON</span>
+            </button>
+
+            <a href="contact.html" class="nav-cta-btn">
+                <span>Let's Connect</span>
+                <span>↗</span>
+            </a>
+
+            <button class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-
-
-    <!-- =================================================
-         HERO
-    ================================================== -->
-
-    <section class="learn-hero">
-
-        <span class="small-title">
-            LEARN • PRACTICE • BUILD
-        </span>
-
-
-        <h1>
-            Learn With Me
-        </h1>
-
-
-        <p>
-            I share what I learn through YouTube and provide
-            notes, code and practice materials here.
-        </p>
-
-    </section>
-
-
-
-    <!-- =================================================
-         MAIN CONTENT
-    ================================================== -->
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="mobile-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="hackathons.html">Hackathons</a>
+            <a href="learn.html" class="active">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-drawer-bottom">
+            <div class="nav-status-badge">
+                <span class="radar-dot"></span>
+                <span>BHUBANESWAR · INDIA</span>
+            </div>
+            <a href="contact.html" class="primary-button" style="width: 100%; justify-content: center;">
+                <span>Let's Connect ↗</span>
+            </a>
+        </div>
+    </div>
 
     <main>
-
-
-        <!-- =================================================
-             COURSES
-        ================================================== -->
-
-        <section class="courses">
-
-            <div class="section-heading">
-
-                <span class="section-label">
-                    LEARNING
-                </span>
-
-                <h2>
-                    My Learning Content
-                </h2>
-
-                <p>
-                    Choose a topic and start learning.
-                </p>
-
+        <!-- Learn Hero -->
+        <section class="learn-hero">
+            <div class="page-hero-top">
+                <span class="page-hero-number">05 / LEARN</span>
+                <span class="section-label">LEARN · PRACTICE · BUILD</span>
             </div>
 
+            <div class="section-heading">
+                <h2>
+                    Learn With Me
+                    <span>& Level Up</span>
+                </h2>
+                <p>
+                    I share what I discover through clear, structured video lessons on YouTube, accompanied by curated
+                    lecture notes, code examples, and practice challenges.
+                </p>
+            </div>
+        </section>
 
-            <!-- JavaScript will create courses here -->
+        <!-- Courses Section -->
+        <section class="courses reveal" style="padding: 20px 8% 60px;">
+            <div class="section-heading">
+                <p class="section-label">01 // TRACKS</p>
+                <h2>
+                    Available Courses
+                    <span>& Roadmaps</span>
+                </h2>
+                <p>Select a learning track below to jump directly into its video lectures and notes.</p>
+            </div>
 
+            <!-- Dynamically populated by learn.js -->
             <div id="course-container"></div>
-
         </section>
 
-
-
-        <!-- =================================================
-             LECTURES
-        ================================================== -->
-
-        <section class="lectures" id="lectures">
-
+        <!-- Lectures Section -->
+        <section class="lectures reveal" id="lectures" style="padding: 40px 8% 80px; border-top: 1px solid var(--glass-border);">
             <div class="section-heading">
-
-                <span class="section-label">
-                    LATEST CONTENT
-                </span>
-
+                <p class="section-label">02 // CONTENT FEED</p>
                 <h2>
-                    Lectures
+                    Video Lectures
+                    <span>& Downloadable Notes</span>
                 </h2>
-
-                <p>
-                    Click a lecture to watch it on YouTube.
-                </p>
-
+                <p>Click any lecture card or the watch button to stream the lesson on YouTube.</p>
             </div>
 
-
-            <!-- JavaScript will create lectures here -->
-
+            <!-- Dynamically populated by learn.js -->
             <div id="lecture-container"></div>
-
         </section>
 
-
+        <!-- Next Page Section -->
+        <section class="next-page reveal">
+            <p>NEXT UP</p>
+            <a href="contact.html">
+                Ready to talk? <span>Let's connect</span> ↗
+            </a>
+        </section>
     </main>
 
-
-
-    <!-- =================================================
-         FOOTER
-    ================================================== -->
-
+    <!-- Universal Footer -->
     <footer>
+        <div class="footer-logo">
+            UG<span>_</span>
+        </div>
 
-        <p>
-            © 2026 Uttakaladeba. All rights reserved.
-        </p>
+        <div>
+            © <span class="current-year">2026</span> Uttakaladeba Garnaik. All rights reserved.
+        </div>
 
+        <div>
+            Engineered with HTML5 · CSS3 · Vanilla JS
+        </div>
     </footer>
 
-
-
-    <!-- =================================================
-         JAVASCRIPT
-    ================================================== -->
-
+    <!-- Master Scripts -->
+    <script src="script.js"></script>
+    <!-- Course & Lecture Content Engine -->
     <script src="learn.js"></script>
-
 </body>
 
 </html>

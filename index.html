@@ -2,546 +2,297 @@
 <html lang="en">
 
 <head>
-
-    <!-- Basic Setup -->
+    <!-- Basic Meta & SEO -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uttakaladeba Garnaik — B.Tech CSE Student, Full-Stack Developer, AI Builder & Hackathon Innovator from Bhubaneswar, India.">
+    <meta name="author" content="Uttakaladeba Garnaik">
+    <meta name="theme-color" content="#06080f">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Uttakaladeba Garnaik | Developer Portfolio">
+    <meta property="og:description" content="Explore projects, skills, hackathon journey, and learning resources by Uttakaladeba Garnaik.">
+    <meta property="og:type" content="website">
 
-    <meta
-        name="description"
-        content="Uttakaladeba Garnaik — B.Tech CSE Student, Developer and Technology Enthusiast."
-    >
+    <title>Uttakaladeba Garnaik | Developer Portfolio</title>
 
-    <meta
-        name="author"
-        content="Uttakaladeba Garnaik"
-    >
-
-    <title>
-        Uttakaladeba Garnaik | Developer
-    </title>
-
-    <!-- CSS -->
+    <!-- Master Cyber Glass Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
-    <!-- ==================================================
-         BACKGROUND
-    =================================================== -->
-
+    <!-- ==============================================================================
+         BACKGROUND SYSTEM: INTERACTIVE CANVAS & AMBIENT GLOWS
+    ============================================================================== -->
     <div class="background">
-
-        <!-- Background Glow -->
-        <div class="glow glow-blue"></div>
-
-        <div class="glow glow-red"></div>
-
-        <div class="glow glow-white"></div>
-
-
-        <!-- Background Grid -->
+        <canvas id="cyberCanvas"></canvas>
         <div class="background-grid"></div>
-
-
-        <!-- Floating Particles -->
-        <div class="particle particle-1"></div>
-
-        <div class="particle particle-2"></div>
-
-        <div class="particle particle-3"></div>
-
-        <div class="particle particle-4"></div>
-
-
-        <!-- Robot 01 -->
-        <div class="robot robot-one">
-
-            <div class="robot-antenna"></div>
-
-            <div class="robot-head">
-
-                <span class="robot-eye"></span>
-
-                <span class="robot-eye"></span>
-
-            </div>
-
-            <div class="robot-body">
-
-                <span>01</span>
-
-            </div>
-
-            <div class="robot-leg left-leg"></div>
-
-            <div class="robot-leg right-leg"></div>
-
-        </div>
-
-
-        <!-- Robot 02 -->
-        <div class="robot robot-two">
-
-            <div class="robot-antenna"></div>
-
-            <div class="robot-head">
-
-                <span class="robot-eye"></span>
-
-                <span class="robot-eye"></span>
-
-            </div>
-
-            <div class="robot-body">
-
-                <span>AI</span>
-
-            </div>
-
-            <div class="robot-leg left-leg"></div>
-
-            <div class="robot-leg right-leg"></div>
-
-        </div>
-
+        <div class="glow-orb glow-blue"></div>
+        <div class="glow-orb glow-purple"></div>
+        <div class="glow-orb glow-cyan"></div>
     </div>
 
+    <!-- ==============================================================================
+         UNIVERSAL NAVIGATION
+    ============================================================================== -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="index.html">UG<span>_</span></a>
+            </div>
 
-<!-- ==================================================
-     NAVIGATION
-=================================================== -->
+            <div class="nav-status-badge">
+                <span class="radar-dot"></span>
+                <span>OPEN TO COLLABS</span>
+            </div>
+        </div>
 
-<header class="navbar">
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="hackathons.html">Hackathons</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <div class="nav-logo">
+        <div class="nav-actions">
+            <!-- Audio Synthesizer SFX Button -->
+            <button class="sound-toggle-btn" aria-label="Toggle Sound Effects">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <span>SFX ON</span>
+            </button>
 
-        <a href="index.html">
+            <a href="contact.html" class="nav-cta-btn">
+                <span>Let's Connect</span>
+                <span>↗</span>
+            </a>
 
-            UG<span>_</span>
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-        </a>
-
+    <!-- Mobile Drawer & Overlay -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="mobile-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="hackathons.html">Hackathons</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-drawer-bottom">
+            <div class="nav-status-badge">
+                <span class="radar-dot"></span>
+                <span>BHUBANESWAR · INDIA</span>
+            </div>
+            <a href="contact.html" class="primary-button" style="width: 100%; justify-content: center;">
+                <span>Let's Connect ↗</span>
+            </a>
+        </div>
     </div>
 
-
-    <nav class="nav-links">
-
-        <a
-            href="index.html"
-            class="active"
-        >
-            Home
-        </a>
-
-
-        <a href="about.html">
-            About
-        </a>
-
-
-        <a href="skills.html">
-            Skills
-        </a>
-
-
-        <a href="projects.html">
-            Projects
-        </a>
-
-
-        <a href="hackathons.html">
-            Hackathons
-        </a>
-
-
-        <!-- NEW LEARN BUTTON -->
-
-        <a href="learn.html">
-            Learn
-        </a>
-
-
-        <a href="contact.html">
-            Contact
-        </a>
-
-    </nav>
-
-</header>
-
-    <!-- ==================================================
-         HERO
-    =================================================== -->
-
+    <!-- ==============================================================================
+         MAIN HERO SECTION
+    ============================================================================== -->
     <main>
+        <section class="hero" id="home">
+            <div class="hero-main-row">
+                <!-- LEFT COLUMN -->
+                <div class="hero-left">
+                    <div class="hero-intro">
+                        <span class="status-dot"></span>
+                        <span>HELLO, I'M</span>
+                    </div>
 
-        <section
-            class="hero"
-            id="home"
-        >
+                    <h1 class="hero-name">
+                        UTTAKALADEBA
+                        <span>GARNAIK</span>
+                    </h1>
 
+                    <!-- Dynamic Typewriter Role -->
+                    <div class="hero-role-wrapper">
+                        <span class="line"></span>
+                        <p id="heroTypewriter" class="hero-role-text">
+                            B.Tech CSE Student 🎓
+                        </p>
+                    </div>
 
-            <!-- LEFT SIDE -->
-            <div class="hero-left">
-
-
-                <div class="hero-intro">
-
-                    <span class="status-dot"></span>
-
-                    <span>
-                        HELLO, I'M
-                    </span>
-
-                </div>
-
-
-                <h1 class="hero-name">
-
-                    UTTAKALADEBA
-
-                    <span>
-                        GARNAIK
-                    </span>
-
-                </h1>
-
-
-                <div class="hero-role">
-
-                    <span class="line"></span>
-
-                    <p>
-                        B.TECH CSE STUDENT
+                    <p class="hero-description">
+                        Computer Science student at Nalanda Institute of Technology, passionate about
+                        turning creative ideas into functional reality through full-stack web development,
+                        intelligent desktop agents, and competitive hackathons.
                     </p>
 
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="primary-button">
+                            <span>Explore Projects</span>
+                            <span>↗</span>
+                        </a>
+
+                        <a href="contact.html" class="secondary-button">
+                            <span>Contact Me</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCrDpJFta8WveMqcclIFYzWyv9JtLURT3BA-A9Ja3BnQ5rNg/viewform?usp=publish-editor"
+                           class="join-team-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <span>Join My Hackathon Team ↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="hero-socials">
+                        <span>CONNECT</span>
+
+                        <a href="https://github.com/uttakaladebagarnaik"
+                           class="hero-social-pill"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/feed/"
+                           class="hero-social-pill"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+
+                        <a href="https://www.instagram.com/uttakala_deba/"
+                           class="hero-social-pill"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Instagram
+                        </a>
+
+                        <a href="https://www.youtube.com/@uttakaladeba"
+                           class="hero-social-pill"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            YouTube
+                        </a>
+                    </div>
                 </div>
 
+                <!-- RIGHT COLUMN: PROFILE PHOTO & INTERACTIVE 3D TILT -->
+                <div class="hero-right">
+                    <div class="photo-area tilt-card">
+                        <!-- Orbit Rings -->
+                        <div class="photo-ring ring-one"></div>
+                        <div class="photo-ring ring-two"></div>
+                        <div class="photo-ring ring-three"></div>
 
-                <p class="hero-description">
+                        <!-- Glow Backdrop -->
+                        <div class="photo-glow"></div>
 
-                    I'm a Computer Science student
-                    passionate about technology,
-                    web development and building
-                    things that turn ideas into reality.
+                        <!-- Profile Image -->
+                        <div class="profile-circle">
+                            <img src="picture/profile.png"
+                                 alt="Uttakaladeba Garnaik — Developer Profile">
+                        </div>
 
-                    <br><br>
+                        <!-- Floating Status Chips -->
+                        <div class="floating-card card-top">
+                            <span>CURRENTLY</span>
+                            <strong>BUILDING & LEARNING</strong>
+                        </div>
 
-                    Currently learning, experimenting
-                    and preparing for bigger projects,
-                    hackathons and the world of
-                    software development.
+                        <div class="floating-card card-bottom">
+                            <span>FIELD</span>
+                            <strong>CSE / FULL-STACK DEV</strong>
+                        </div>
 
-                </p>
-
-
-                <!-- HERO BUTTONS -->
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="projects.html"
-                        class="primary-button"
-                    >
-
-                        Explore Projects
-
-                        <span>↗</span>
-
-                    </a>
-
-
-                    <a
-                        href="contact.html"
-                        class="secondary-button"
-                    >
-
-                        Contact Me
-
-                        <span>→</span>
-
-                    </a>
-
-                    <a  href="https://docs.google.com/forms/d/e/1FAIpQLSdCrDpJFta8WveMqcclIFYzWyv9JtLURT3BA-A9Ja3BnQ5rNg/viewform?usp=publish-editor" 
-                        class="join-team-btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-
-                         Join My Hackathon Team ↗
-
-                    </a>
-
+                        <!-- Mini Orbit Dots -->
+                        <span class="orbit-dot dot-one"></span>
+                        <span class="orbit-dot dot-two"></span>
+                        <span class="orbit-dot dot-three"></span>
+                    </div>
                 </div>
-
-
-
-                <!-- SOCIAL LINKS -->
-
-                <div class="hero-socials">
-
-                    <span>
-                        FIND ME
-                    </span>
-
-
-                    <a
-                        href="https://github.com/uttakaladebagarnaik"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-
-                    <a
-                        href="https://www.linkedin.com/feed/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-
-                    <a
-                        href="https://www.instagram.com/uttakala_deba/"
-                        target="_blank"
-                    >
-                        Instagram
-                    </a>
-
-
-                    <a
-                        href="https://www.youtube.com/@uttakaladeba"
-                        target="_blank"
-                    >
-                        YouTube
-                    </a>
-
-                </div>
-
-
             </div>
 
-
-
-            <!-- ==================================================
-                 RIGHT SIDE — PROFILE PHOTO
-            =================================================== -->
-
-            <div class="hero-right">
-
-
-                <div class="photo-area">
-
-
-                    <!-- Outer Rings -->
-
-                    <div class="photo-ring ring-one"></div>
-
-                    <div class="photo-ring ring-two"></div>
-
-                    <div class="photo-ring ring-three"></div>
-
-
-                    <!-- Glow -->
-
-                    <div class="photo-glow"></div>
-
-
-                    <!-- Profile -->
-
-                    <div class="profile-circle">
-
-                        <img
-                            src="Codex Image Aug 21, 2026, 12_15_15 PM.png"
-                            alt="Uttakaladeba Garnaik"
-                        >
-
-                    </div>
-
-
-                    <!-- Floating Information -->
-
-                    <div class="floating-card card-top">
-
-                        <span>
-                            CURRENTLY
-                        </span>
-
-                        <strong>
-                            BUILDING
-                        </strong>
-
-                    </div>
-
-
-                    <div class="floating-card card-bottom">
-
-                        <span>
-                            FIELD
-                        </span>
-
-                        <strong>
-                            CSE / DEV
-                        </strong>
-
-                    </div>
-
-
-                    <!-- Orbit Dots -->
-
-                    <span class="orbit-dot dot-one"></span>
-
-                    <span class="orbit-dot dot-two"></span>
-
-                    <span class="orbit-dot dot-three"></span>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- ==================================================
-                 BOTTOM INFO
-            =================================================== -->
-
+            <!-- HERO BOTTOM HUD -->
             <div class="hero-bottom">
-
-
-                <div class="hero-location">
-
-                    <span class="small-line"></span>
-
-                    <p>
-                        BHUBANESWAR · INDIA
-                    </p>
-
+                <div class="hud-item">
+                    <span>LOCATION:</span>
+                    <strong>BHUBANESWAR · INDIA</strong>
                 </div>
 
+                <div class="hud-item">
+                    <span>LOCAL TIME:</span>
+                    <strong id="hud-time-ist">--:--:-- IST</strong>
+                </div>
+
+                <div class="hud-item">
+                    <span>SYS TIME:</span>
+                    <strong id="hud-time-utc">--:--:-- UTC</strong>
+                </div>
 
                 <div class="scroll-indicator">
-
-                    <span>
-                        SCROLL TO EXPLORE
-                    </span>
-
-                    <b>
-                        ↓
-                    </b>
-
+                    <span>SCROLL TO EXPLORE</span>
+                    <b>↓</b>
                 </div>
-
-
-                <div class="hero-version">
-
-                    <span>
-                        VERSION
-                    </span>
-
-                    <strong>
-                        01.26
-                    </strong>
-
-                </div>
-
             </div>
-
-
         </section>
 
-
-
-        <!-- ==================================================
-             QUICK INTRO
-        =================================================== -->
-
-        <section class="quick-intro">
-
-
-            <div class="intro-number">
-                01
-            </div>
-
-
+        <!-- ==============================================================================
+             QUICK INTRO SECTION
+        ============================================================================== -->
+        <section class="quick-intro reveal">
+            <div class="intro-number">01</div>
             <div class="intro-content">
-
-                <p class="section-label">
-                    A LITTLE ABOUT ME
-                </p>
-
-
+                <p class="section-label">A LITTLE ABOUT ME</p>
                 <h2>
-
                     Learning today.
-
-                    <span>
-                        Building tomorrow.
-                    </span>
-
+                    <span>Building tomorrow.</span>
                 </h2>
-
-
-                <a
-                    href="about.html"
-                    class="text-link"
-                >
-
-                    More about me
-
+                <p style="color: var(--text-secondary); max-width: 650px; line-height: 1.7; margin-bottom: 16px;">
+                    Driven by curiosity and a passion for engineering digital solutions. Currently exploring web applications,
+                    desktop automation, data systems, and rapid prototyping for hackathons.
+                </p>
+                <a href="about.html" class="text-link">
+                    <span>Read my full story & journey</span>
                     <span>↗</span>
-
                 </a>
-
             </div>
-
-
         </section>
-
-
     </main>
 
-
-
-    <!-- ==================================================
-         FOOTER
-    =================================================== -->
-
+    <!-- ==============================================================================
+         UNIVERSAL FOOTER
+    ============================================================================== -->
     <footer>
-
-        <div>
-            © 2026 Uttakaladeba Garnaik
-        </div>
-
-
-        <div>
-            Built with HTML · CSS · JavaScript
-        </div>
-
-
-        <div>
+        <div class="footer-logo">
             UG<span>_</span>
         </div>
 
+        <div>
+            © <span class="current-year">2026</span> Uttakaladeba Garnaik. All rights reserved.
+        </div>
+
+        <div>
+            Engineered with HTML5 · CSS3 · Vanilla JS
+        </div>
     </footer>
 
-
-
-    <!-- JavaScript -->
+    <!-- Master Scripts -->
     <script src="script.js"></script>
-
 </body>
 
 </html>
